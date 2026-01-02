@@ -7,68 +7,64 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Removing top empty space forcefully */
-			#wrapper { padding-top: 0 !important; margin-top: 0 !important; }
-			#header { display: none !important; } /* Removing logo header to save space */
-			#main { 
-				padding-top: 20px !important; 
-				margin-top: 0 !important; 
-				top: 0 !important;
-			}
-			
-			/* Profile layout design */
+			/* ১. উপরের বিশাল ফাঁকা অংশ (Intro) পুরোপুরি রিমুভ করার জন্য */
+			#intro { display: none !important; } 
+			#header { padding: 2em 0 !important; margin: 0 !important; }
+			#navPanel, #nav { margin-top: 0 !important; }
+
+			/* ২. ছবির সাইজ এবং লেআউট ঠিক করার জন্য */
 			.profile-top-section {
 				display: flex;
-				align-items: center;
-				gap: 50px;
-				margin-bottom: 40px;
+				align-items: flex-start;
+				gap: 40px;
+				margin-bottom: 30px;
+				padding: 20px 0;
+			}
+			
+			.profile-top-section .image-container {
+				flex: 1;
+			}
+
+			.profile-top-section img {
+				width: 100% !important; /* কন্টেইনার অনুযায়ী বড় হবে */
+				max-width: 600px !important; /* ছবির সর্বোচ্চ বড় সাইজ */
+				height: auto;
+				border-radius: 10px;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+			}
+
+			.welcome-box {
+				flex: 1;
 				text-align: left;
 			}
-			
-			.profile-top-section img {
-				width: 550px !important; /* Extremely large image */
-				height: auto;
-				border-radius: 15px;
-				box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-			}
-			
-			.welcome-title {
-				font-size: 2.2em;
+
+			.welcome-box h2 {
+				font-size: 2.5em !important;
 				line-height: 1.2;
 				font-weight: 900;
+				margin-top: 20px;
 				color: #212931;
-				text-transform: uppercase;
 			}
 
-			.info-box {
+			/* ৩. অন্যান্য তথ্যের বক্স ডিজাইন */
+			.info-card {
 				text-align: left;
 				background: #ffffff;
-				padding: 30px;
-				border-radius: 15px;
-				border: 1px solid #e5e5e5;
-				margin-bottom: 30px;
+				padding: 25px;
+				border-radius: 10px;
+				border: 1px solid #ddd;
+				margin-bottom: 25px;
 			}
 
-			.info-box h3 {
-				color: #212931;
-				border-bottom: 4px solid #212931;
+			.info-card h3 {
+				border-bottom: 3px solid #212931;
 				display: inline-block;
-				margin-bottom: 20px;
-				font-size: 1.3em;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-			}
-
-			.grid-container {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				gap: 30px;
+				margin-bottom: 15px;
 			}
 
 			@media screen and (max-width: 980px) {
-				.profile-top-section { flex-direction: column; text-align: center; }
-				.profile-top-section img { width: 100% !important; }
-				.grid-container { grid-template-columns: 1fr; }
+				.profile-top-section { flex-direction: column; }
+				.profile-top-section img { max-width: 100% !important; }
 			}
 		</style>
 	</head>
@@ -79,35 +75,36 @@
 						<article class="post featured">
 							
 							<div class="profile-top-section">
-								<img src="images/nilima.jpg" alt="Nilima Rahman Labonno">
-								<div class="welcome-title">
-									Hello everyone,<br>My name is<br>Nilima Rahman Labonno
+								<div class="image-container">
+									<img src="images/nilima.jpg" alt="Nilima Rahman Labonno">
+								</div>
+								<div class="welcome-box">
+									<h2>HELLO EVERYONE,<br>MY NAME IS<br>NILIMA RAHMAN LABONNO</h2>
 								</div>
 							</div>
 
-							<div class="info-box">
+							<div class="info-card">
 								<h3>About Me</h3>
-								<p>I am a dedicated student at Universiti Teknologi Malaysia (UTM), specializing in Graphics and Multimedia Software. I am passionate about creating innovative digital content and exploring the boundaries of multimedia technology.</p>
+								<p>I am a creative student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software. I am passionate about digital storytelling and creating impactful visual experiences.</p>
 							</div>
 
-							<div class="grid-container">
-								<div class="info-box">
-									<h3>Core: Education & Skills</h3>
-									<p><strong>Education:</strong> Bachelor of Computer Science (Graphics and Multimedia Software), UTM.<br />
-									<strong>Skills:</strong> Multimedia Design, UI/UX Design, Graphics Software Development, Creative Problem Solving.</p>
-								</div>
-								<div class="info-box">
-									<h3>Recommended: Courses</h3>
-									<p>• Graphic Design Masterclass - Online Certification<br />
-									• Adobe Certified Professional - Digital Illustration</p>
-								</div>
+							<div class="info-card">
+								<h3>Core: Education & Skills</h3>
+								<p><strong>Education:</strong> Bachelor of Computer Science (Graphics and Multimedia Software), UTM.<br />
+								<strong>Skills:</strong> Multimedia Design, UI/UX, Graphics Software Development.</p>
 							</div>
 
-							<div class="info-box">
+							<div class="info-card">
+								<h3>Recommended: Courses</h3>
+								<p>• Graphic Design Masterclass - Online Certification.<br />
+								• Adobe Certified Professional - Digital Illustration.</p>
+							</div>
+
+							<div class="info-card">
 								<h3>Additional: Honors, Awards & Projects</h3>
-								<p>• <strong>Award:</strong> Academic Achievement Honor from <strong>BMAPC</strong>.<br />
+								<p>• <strong>Award:</strong> Academic Honor Award from <strong>BMAPC</strong>.<br />
 								• <strong>Project:</strong> Branding and Visual Identity Design.<br />
-								• <strong>Project:</strong> 2D Animation and Digital Storytelling Assignment.</p>
+								• <strong>Project:</strong> 2D Animation Assignment.</p>
 							</div>
 
 						</article>
@@ -119,16 +116,14 @@
 								<h3>Email</h3>
 								<p><a href="mailto:nilimarahmanlabonno@gmail.com">nilimarahmanlabonno@gmail.com</a></p>
 							</section>
-							<section>
-								<h3>University</h3>
-								<p>Universiti Teknologi Malaysia (UTM)</p>
-							</section>
 						</section>
 					</footer>
 			</div>
 
-		<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/main.js"></script>
 	</body>
 </html>
+			
+							
