@@ -7,23 +7,52 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Profile layout thik korar jonno chotto ekta style */
-			.profile-container {
+			/* কাস্টম ডিজাইন স্টাইল */
+			.profile-top-section {
 				display: flex;
-				align-items: flex-start;
-				gap: 2em;
+				align-items: center;
+				gap: 30px;
+				margin-bottom: 40px;
+			}
+			.profile-top-section img {
+				width: 450px; /* ছবি বড় করা হয়েছে */
+				border-radius: 15px;
+				border: 5px solid #f4f4f4;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+			}
+			.welcome-text {
+				font-size: 2em;
+				line-height: 1.2;
+				font-weight: 800;
+				color: #1a1a1a;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+			.info-card {
+				background: #fdfdfd;
+				padding: 30px;
+				border-radius: 20px;
+				border-left: 8px solid #212931;
+				margin-top: 30px;
 				text-align: left;
+				box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 			}
-			.profile-image {
-				flex: 1;
-				max-width: 40%;
+			.info-card h3 {
+				color: #212931;
+				font-size: 1.4em;
+				margin-bottom: 15px;
+				border-bottom: 2px solid #eee;
+				display: inline-block;
 			}
-			.profile-details {
-				flex: 1.5;
+			.skills-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 20px;
 			}
-			@media screen and (max-width: 736px) {
-				.profile-container { display: block; }
-				.profile-image { max-width: 100%; margin-bottom: 2em; }
+			@media screen and (max-width: 980px) {
+				.profile-top-section { flex-direction: column; text-align: center; }
+				.profile-top-section img { width: 100%; }
+				.skills-grid { grid-template-columns: 1fr; }
 			}
 		</style>
 	</head>
@@ -38,71 +67,57 @@
 						</ul>
 					</div>
 
-				<header id="header">
-						<a href="index.html" class="logo">My Creative Journey</a>
-					</header>
-
 				<div id="main">
-
 						<article class="post featured">
-								<div class="profile-container">
-									
-									<div class="profile-image">
-										<span class="image main"><img src="images/nilima.jpg" alt="Nilima Rahman Labonno" /></span>
-									</div>
-
-									<div class="profile-details">
-										<header class="major">
-											<h2 style="font-size: 1.5em; margin-bottom: 0.5em;">Hello everyone, my name is Nilima Rahman Labonno</h2>
-										</header>
-										
-										<h3>About Me</h3>
-										<p>I am a creative student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software. I am passionate about digital storytelling and creating impactful visual experiences.</p>
-
-										<hr />
-
-										<h3>Core: Education & Skills</h3>
-										<p><strong>Education:</strong> Bachelor of Computer Science (Graphics and Multimedia Software), UTM.<br />
-										<strong>Skills:</strong> Multimedia Systems Design, Graphics Programming, UI/UX Design, Adobe Creative Suite.</p>
-
-										<hr />
-
-										<h3>Recommended: Courses & Certificates</h3>
-										<ul>
-											<li>Graphic Design Masterclass - Online Certification</li>
-											<li>Adobe Certified Professional - Digital Illustration</li>
-										</ul>
-
-										<hr />
-
-										<h3>Additional: Honors, Awards & Projects</h3>
-										<p>• <strong>Award:</strong> Dean's List Award (UTM)<br />
-										• <strong>Project:</strong> Brand Identity & Logo Design Project<br />
-										• <strong>Project:</strong> 2D Animation Short Story Assignment</p>
-									</div>
+							
+							<div class="profile-top-section">
+								<img src="images/nilima.jpg" alt="Nilima Rahman Labonno">
+								<div class="welcome-text">
+									Hello everyone,<br>My name is<br>Nilima Rahman Labonno
 								</div>
-							</article>
+							</div>
 
+							<div class="info-card">
+								<h3>About Me</h3>
+								<p>I am a passionate student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software. My creative journey involves blending technology with art to create impactful visual experiences.</p>
+							</div>
+
+							<div class="skills-grid">
+								<div class="info-card">
+									<h3>Core: Education & Skills</h3>
+									<p><strong>Education:</strong> Bachelor of Computer Science (Graphics and Multimedia Software), UTM.<br />
+									<strong>Skills:</strong> Multimedia Systems Design, Graphics Programming, UI/UX Design, Adobe Creative Suite.</p>
+								</div>
+								<div class="info-card">
+									<h3>Recommended: Courses</h3>
+									<p>• Graphic Design Masterclass - Online Certification<br />
+									• Adobe Certified Professional - Digital Illustration</p>
+								</div>
+							</div>
+
+							<div class="info-card">
+								<h3>Additional: Honors, Awards & Projects</h3>
+								<p>• <strong>Award:</strong> Academic Achievement Award from <strong>BMAPC</strong>.<br />
+								• <strong>Project:</strong> Brand Identity & Logo Design Project<br />
+								• <strong>Project:</strong> 2D Animation Short Story Assignment</p>
+							</div>
+
+						</article>
 					</div>
 
 				<footer id="footer">
 						<section class="split contact">
 							<section>
 								<h3>University</h3>
-								<p>Universiti Teknologi Malaysia (UTM)<br />
-								Johor Bahru, Malaysia</p>
+								<p>Universiti Teknologi Malaysia (UTM)<br />Johor Bahru, Malaysia</p>
 							</section>
 							<section>
 								<h3>Contact</h3>
-								<p><strong>Email:</strong><br />
-								<a href="mailto:nilimarahmanlabonno@gmail.com">nilimarahmanlabonno@gmail.com</a></p>
+								<p><a href="mailto:nilimarahmanlabonno@gmail.com">nilimarahmanlabonno@gmail.com</a></p>
 							</section>
 						</section>
 					</footer>
 
-					<div id="copyright">
-						<ul><li>&copy; Nilima Rahman Labonno</li><li>Design: HTML5 UP</li></ul>
-					</div>
 			</div>
 
 		<script src="assets/js/jquery.min.js"></script>
