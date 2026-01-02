@@ -7,99 +7,113 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* কাস্টম ডিজাইন স্টাইল */
+			/* Fixed padding to remove top white space */
+			#main {
+				padding-top: 10px !important;
+				margin-top: -60px !important;
+			}
+			
+			/* Profile layout design */
 			.profile-top-section {
 				display: flex;
 				align-items: center;
-				gap: 30px;
-				margin-bottom: 40px;
-			}
-			.profile-top-section img {
-				width: 450px; /* ছবি বড় করা হয়েছে */
+				gap: 40px;
+				margin-bottom: 30px;
+				background: #fff;
+				padding: 20px;
 				border-radius: 15px;
-				border: 5px solid #f4f4f4;
-				box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 			}
-			.welcome-text {
-				font-size: 2em;
-				line-height: 1.2;
-				font-weight: 800;
-				color: #1a1a1a;
-				text-transform: uppercase;
-				letter-spacing: 2px;
+			
+			.profile-top-section img {
+				width: 500px; /* Large image as requested */
+				height: auto;
+				border-radius: 10px;
+				box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+				border: 3px solid #eee;
 			}
-			.info-card {
-				background: #fdfdfd;
-				padding: 30px;
-				border-radius: 20px;
-				border-left: 8px solid #212931;
-				margin-top: 30px;
-				text-align: left;
-				box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-			}
-			.info-card h3 {
+			
+			.welcome-title {
+				font-size: 1.8em;
+				line-height: 1.3;
+				font-weight: 900;
 				color: #212931;
-				font-size: 1.4em;
-				margin-bottom: 15px;
-				border-bottom: 2px solid #eee;
-				display: inline-block;
+				text-transform: uppercase;
+				text-align: left;
 			}
-			.skills-grid {
+
+			.info-box {
+				text-align: left;
+				background: #fcfcfc;
+				padding: 25px;
+				border-radius: 12px;
+				border: 1px solid #efefef;
+				margin-bottom: 25px;
+				box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+			}
+
+			.info-box h3 {
+				color: #1a1a1a;
+				border-bottom: 3px solid #212931;
+				display: inline-block;
+				margin-bottom: 15px;
+				font-size: 1.2em;
+				text-transform: uppercase;
+			}
+
+			.grid-container {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				gap: 20px;
 			}
+
 			@media screen and (max-width: 980px) {
 				.profile-top-section { flex-direction: column; text-align: center; }
 				.profile-top-section img { width: 100%; }
-				.skills-grid { grid-template-columns: 1fr; }
+				.grid-container { grid-template-columns: 1fr; }
+				.welcome-title { text-align: center; font-size: 1.5em; }
 			}
 		</style>
 	</head>
 	<body class="is-preload">
 		<div id="wrapper" class="fade-in">
 
-				<div id="intro">
-						<h1>Nilima Rahman<br />Labonno</h1>
-						<p>Graphics and Multimedia Software Student at UTM</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+				<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
 
 				<div id="main">
 						<article class="post featured">
 							
 							<div class="profile-top-section">
 								<img src="images/nilima.jpg" alt="Nilima Rahman Labonno">
-								<div class="welcome-text">
+								<div class="welcome-title">
 									Hello everyone,<br>My name is<br>Nilima Rahman Labonno
 								</div>
 							</div>
 
-							<div class="info-card">
+							<div class="info-box">
 								<h3>About Me</h3>
-								<p>I am a passionate student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software. My creative journey involves blending technology with art to create impactful visual experiences.</p>
+								<p>I am a dedicated student at Universiti Teknologi Malaysia (UTM), specializing in Graphics and Multimedia Software. I am passionate about creating innovative digital content and exploring the boundaries of multimedia technology.</p>
 							</div>
 
-							<div class="skills-grid">
-								<div class="info-card">
+							<div class="grid-container">
+								<div class="info-box">
 									<h3>Core: Education & Skills</h3>
 									<p><strong>Education:</strong> Bachelor of Computer Science (Graphics and Multimedia Software), UTM.<br />
-									<strong>Skills:</strong> Multimedia Systems Design, Graphics Programming, UI/UX Design, Adobe Creative Suite.</p>
+									<strong>Skills:</strong> Multimedia Design, UI/UX, Graphics Software Development, Problem Solving.</p>
 								</div>
-								<div class="info-card">
+								<div class="info-box">
 									<h3>Recommended: Courses</h3>
 									<p>• Graphic Design Masterclass - Online Certification<br />
 									• Adobe Certified Professional - Digital Illustration</p>
 								</div>
 							</div>
 
-							<div class="info-card">
+							<div class="info-box">
 								<h3>Additional: Honors, Awards & Projects</h3>
-								<p>• <strong>Award:</strong> Academic Achievement Award from <strong>BMAPC</strong>.<br />
-								• <strong>Project:</strong> Brand Identity & Logo Design Project<br />
-								• <strong>Project:</strong> 2D Animation Short Story Assignment</p>
+								<p>• <strong>Award:</strong> Academic Honor Award from <strong>BMAPC</strong>.<br />
+								• <strong>Project:</strong> Branding and Logo Identity Design.<br />
+								• <strong>Project:</strong> 2D Animation and Visual Storytelling Assignment.</p>
 							</div>
 
 						</article>
@@ -108,16 +122,15 @@
 				<footer id="footer">
 						<section class="split contact">
 							<section>
-								<h3>University</h3>
-								<p>Universiti Teknologi Malaysia (UTM)<br />Johor Bahru, Malaysia</p>
+								<h3>Contact Email</h3>
+								<p><a href="mailto:nilimarahmanlabonno@gmail.com">nilimarahmanlabonno@gmail.com</a></p>
 							</section>
 							<section>
-								<h3>Contact</h3>
-								<p><a href="mailto:nilimarahmanlabonno@gmail.com">nilimarahmanlabonno@gmail.com</a></p>
+								<h3>University</h3>
+								<p>Universiti Teknologi Malaysia (UTM)</p>
 							</section>
 						</section>
 					</footer>
-
 			</div>
 
 		<script src="assets/js/jquery.min.js"></script>
