@@ -1,21 +1,38 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Nilima's Portfolio | UTM</title>
+		<title>Nilima Rahman Labonno | Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Profile layout thik korar jonno chotto ekta style */
+			.profile-container {
+				display: flex;
+				align-items: flex-start;
+				gap: 2em;
+				text-align: left;
+			}
+			.profile-image {
+				flex: 1;
+				max-width: 40%;
+			}
+			.profile-details {
+				flex: 1.5;
+			}
+			@media screen and (max-width: 736px) {
+				.profile-container { display: block; }
+				.profile-image { max-width: 100%; margin-bottom: 2em; }
+			}
+		</style>
 	</head>
 	<body class="is-preload">
-
 		<div id="wrapper" class="fade-in">
 
 				<div id="intro">
-						<h1>Nilima Rahman<br />
-						Labonno</h1>
+						<h1>Nilima Rahman<br />Labonno</h1>
 						<p>Graphics and Multimedia Software Student at UTM</p>
-						<p>I am a creative and motivated student at Universiti Teknologi Malaysia (UTM), specializing in Graphics and Multimedia Software. I have a strong passion for digital art, UI/UX design, and exploring how technology can enhance visual storytelling. My goal is to develop professional skills in multimedia tools and software engineering to create impactful digital experiences.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -25,84 +42,71 @@
 						<a href="index.html" class="logo">My Creative Journey</a>
 					</header>
 
-				<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Profile</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
 				<div id="main">
 
 						<article class="post featured">
-								<header class="major">
-									<h2>About Me</h2>
-									<p>Welcome to my professional e-portfolio. Here you will find my academic journey in Graphics and Multimedia, my projects, and reflections on my learning experiences at UTM.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/nilima.jpg.jpg" alt="Nilima Rahman Labonno" /></a>
-							</article>
+								<div class="profile-container">
+									
+									<div class="profile-image">
+										<span class="image main"><img src="images/nilima.jpg" alt="Nilima Rahman Labonno" /></span>
+									</div>
 
-						<section class="posts">
-								<article>
-									<header>
-										<h3>Education</h3>
-									</header>
-									<p><strong>Universiti Teknologi Malaysia (UTM)</strong><br />
-									Bachelor of Computer Science (Graphics and Multimedia Software)<br />
-									Skudai, Johor Bahru, Malaysia.</p>
-								</article>
-								<article>
-									<header>
-										<h3>Core Skills</h3>
-									</header>
-									<p>• Multimedia Systems & Design<br />
-									• Graphics Software Development (HTML/CSS)<br />
-									• UI/UX & Digital Illustration<br />
-									• Problem Solving & Creative Thinking</p>
-								</article>
-							</section>
+									<div class="profile-details">
+										<header class="major">
+											<h2 style="font-size: 1.5em; margin-bottom: 0.5em;">Hello everyone, my name is Nilima Rahman Labonno</h2>
+										</header>
+										
+										<h3>About Me</h3>
+										<p>I am a creative student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software. I am passionate about digital storytelling and creating impactful visual experiences.</p>
+
+										<hr />
+
+										<h3>Core: Education & Skills</h3>
+										<p><strong>Education:</strong> Bachelor of Computer Science (Graphics and Multimedia Software), UTM.<br />
+										<strong>Skills:</strong> Multimedia Systems Design, Graphics Programming, UI/UX Design, Adobe Creative Suite.</p>
+
+										<hr />
+
+										<h3>Recommended: Courses & Certificates</h3>
+										<ul>
+											<li>Graphic Design Masterclass - Online Certification</li>
+											<li>Adobe Certified Professional - Digital Illustration</li>
+										</ul>
+
+										<hr />
+
+										<h3>Additional: Honors, Awards & Projects</h3>
+										<p>• <strong>Award:</strong> Dean's List Award (UTM)<br />
+										• <strong>Project:</strong> Brand Identity & Logo Design Project<br />
+										• <strong>Project:</strong> 2D Animation Short Story Assignment</p>
+									</div>
+								</div>
+							</article>
 
 					</div>
 
 				<footer id="footer">
 						<section class="split contact">
-							<section class="alt">
+							<section>
 								<h3>University</h3>
 								<p>Universiti Teknologi Malaysia (UTM)<br />
 								Johor Bahru, Malaysia</p>
 							</section>
 							<section>
-								<h3>Email</h3>
-								<p><a href="#">nilima@example.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="#" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
+								<h3>Contact</h3>
+								<p><strong>Email:</strong><br />
+								<a href="mailto:nilimarahmanlabonno@gmail.com">nilimarahmanlabonno@gmail.com</a></p>
 							</section>
 						</section>
 					</footer>
 
-				<div id="copyright">
-						<ul><li>&copy; Nilima Rahman Labonno</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					<div id="copyright">
+						<ul><li>&copy; Nilima Rahman Labonno</li><li>Design: HTML5 UP</li></ul>
 					</div>
-
 			</div>
 
 		<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
