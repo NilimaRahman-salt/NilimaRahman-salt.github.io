@@ -7,12 +7,9 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* ১. উপরের বিশাল ফাঁকা অংশ (Intro) পুরোপুরি রিমুভ করার জন্য */
 			#intro { display: none !important; } 
 			#header { padding: 2em 0 !important; margin: 0 !important; }
-			#navPanel, #nav { margin-top: 0 !important; }
-
-			/* ২. ছবির সাইজ এবং লেআউট ঠিক করার জন্য */
+			
 			.profile-top-section {
 				display: flex;
 				align-items: flex-start;
@@ -21,32 +18,21 @@
 				padding: 20px 0;
 			}
 			
-			.profile-top-section .image-container {
-				flex: 1;
-			}
-
 			.profile-top-section img {
-				width: 100% !important; /* কন্টেইনার অনুযায়ী বড় হবে */
-				max-width: 600px !important; /* ছবির সর্বোচ্চ বড় সাইজ */
+				width: 100% !important;
+				max-width: 600px !important;
 				height: auto;
 				border-radius: 10px;
 				box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-			}
-
-			.welcome-box {
-				flex: 1;
-				text-align: left;
 			}
 
 			.welcome-box h2 {
 				font-size: 2.5em !important;
 				line-height: 1.2;
 				font-weight: 900;
-				margin-top: 20px;
 				color: #212931;
 			}
 
-			/* ৩. অন্যান্য তথ্যের বক্স ডিজাইন */
 			.info-card {
 				text-align: left;
 				background: #ffffff;
@@ -62,68 +48,174 @@
 				margin-bottom: 15px;
 			}
 
+			.reflection-box {
+				margin-top: 20px;
+				padding: 15px;
+				background: #f9f9f9;
+				border-left: 5px solid #212931;
+			}
+
+			.assignment-img {
+				width: 100%;
+				max-width: 700px;
+				border-radius: 8px;
+				margin: 15px 0;
+				box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			}
+
+			.gift-container {
+				display: flex;
+				gap: 15px;
+				margin: 15px 0;
+			}
+
+			.gift-container img {
+				width: 48%;
+				border-radius: 8px;
+			}
+
+			hr { margin: 40px 0; }
+
 			@media screen and (max-width: 980px) {
 				.profile-top-section { flex-direction: column; }
-				.profile-top-section img { max-width: 100% !important; }
+				.gift-container img { width: 100%; }
 			}
 		</style>
 	</head>
 	<body class="is-preload">
 		<div id="wrapper" class="fade-in">
-
-				<div id="main">
-						<article class="post featured">
-							
-							<div class="profile-top-section">
-								<div class="image-container">
-									<img src="images/nilima.jpg" alt="Nilima Rahman Labonno">
-								</div>
-								<div class="welcome-box">
-									<h2>HELLO EVERYONE,<br>MY NAME IS<br>NILIMA RAHMAN LABONNO</h2>
-								</div>
-							</div>
-
-							<div class="info-card">
-								<h3>About Me</h3>
-								<p>I am a creative student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software. I am passionate about digital storytelling and creating impactful visual experiences.</p>
-							</div>
-
-							<div class="info-card">
-								<h3>Core: Education & Skills</h3>
-								<p><strong>Education:</strong> Bachelor of Computer Science (Graphics and Multimedia Software), UTM.<br />
-								<strong>Skills:</strong> Multimedia Design, UI/UX, Graphics Software Development.</p>
-							</div>
-
-							<div class="info-card">
-								<h3>Recommended: Courses</h3>
-								<p>• Graphic Design Masterclass - Online Certification.<br />
-								• Adobe Certified Professional - Digital Illustration.</p>
-							</div>
-
-							<div class="info-card">
-								<h3>Additional: Honors, Awards & Projects</h3>
-								<p>• <strong>Award:</strong> Academic Honor Award from <strong>BMAPC</strong>.<br />
-								• <strong>Project:</strong> Branding and Visual Identity Design.<br />
-								• <strong>Project:</strong> 2D Animation Assignment.</p>
-							</div>
-
-						</article>
+			<div id="main">
+				<article class="post featured">
+					
+					<div class="profile-top-section">
+						<div class="image-container">
+							<img src="images/nilima.jpg" alt="Nilima Rahman Labonno">
+						</div>
+						<div class="welcome-box">
+							<h2>HELLO EVERYONE,<br>MY NAME IS<br>NILIMA RAHMAN LABONNO</h2>
+						</div>
 					</div>
 
-				<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:nilimarahmanlabonno@gmail.com">nilimarahmanlabonno@gmail.com</a></p>
-							</section>
-						</section>
-					</footer>
+					<div class="info-card">
+						<h3>About Me</h3>
+						<p>I am a creative student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software.</p>
+					</div>
+
+					<div class="info-card">
+						<h3>Academic Assignments & Reflections</h3>
+
+						<div class="assignment-block">
+							<h4 style="color: #212931; margin-bottom: 10px;">1.1 Reflection on Industrial Visit 1 (UTM Open Day at UTM Digital)</h4>
+							
+							<div style="margin: 20px 0;">
+								<p><strong>Watch the Video:</strong></p>
+								<a href="https://youtu.be/lgif2j1ni-U" target="_blank" class="button primary">Watch on YouTube</a>
+							</div>
+
+							<div class="reflection-box">
+								<p><strong>1. What I have gained:</strong><br>
+								"I attended the UTM Open Day held at UTM Digital, which served as my first Industrial Visit. It was a great opportunity where various companies reviewed their latest products and shared how technology is shaping the future. I gained a clear understanding of how UTM Smart services facilitate our campus life and the importance of UTM WiFi for our academic success. Moreover, I was introduced to several AI applications that are currently trending in the industry. Participating in the Q&A session was a highlight for me, as I won a UTM-branded pen for my correct answer, which really boosted my confidence."</p>
+							</div>
+
+							<div class="gift-container">
+								<img src="utmdisital gift 1.jpeg" alt="UTM Digital Gift 1">
+								<img src="utmdisital gift 2.jpeg" alt="UTM Digital Gift 2">
+							</div>
+
+							<div class="reflection-box">
+								<p><strong>2. Suggested Improvements:</strong><br>
+								"Since the event was at UTM Digital, it was already very tech-focused. However, I suggest that future Open Days could include a 'Tech-Walk' through the UTM Digital servers or data centers to give students a behind-the-scenes look at the infrastructure. Also, having more booth-based short hackathons or problem-solving tasks would make the industrial interaction even more exciting."</p>
+								
+								<p><strong>3. Reflection on Opinion, Idea, and Creativity:</strong><br>
+								"The environment at UTM Digital during the Open Day was inspiring. My reflection is that such events bridge the gap between students and the corporate world. It sparked an idea in me: what if we had a UTM Smart App feature that uses AI to guide new students during such Open Days with real-time navigation and booth information? This visit encouraged me to be more proactive in learning and to think creatively about how our university’s digital resources can be further enhanced."</p>
+							</div>
+						</div>
+
+						<hr />
+
+						<div class="assignment-block">
+							<h4 style="color: #212931;">1.2 Reflection for Poster: PPG Industrial Talk 1</h4>
+							
+							<img src="poster for industrial talk1( assignment 2).jpeg" alt="PPG Industrial Talk Poster" class="assignment-img">
+
+							<div class="reflection-box">
+								<p><strong>1. What I have gained:</strong><br>
+								"While creating this poster for the PPG Industrial Talk 1, I dived deep into how a global leader uses data to drive its business. I gained detailed knowledge about Data Analytics COE, specifically how innovations like the Marine Hull Navigator predict risks and save fuel costs. I also learned about PPG's Cloud-Only infrastructure strategy, utilizing AWS and Azure to maintain a global network. Furthermore, exploring the SAP Process Flow (Procure to Pay and Order to Cash) helped me understand how an Enterprise Resource Planning (ERP) system connects finance, logistics, and operations in real-time."</p>
+								<p><strong>2. Suggested Improvements:</strong><br>
+								"The session provided a great overview of high-level architecture. However, to improve future learning, I suggest including a comparison study between traditional industrial methods and these new AI-driven models. Additionally, a brief session on the specific cybersecurity protocols used within the Multi-Cloud Ecosystem would provide a more holistic view of the technical safety measures involved."</p>
+								<p><strong>3. Reflection on Opinion, Idea, and Creativity:</strong><br>
+								"This poster is a result of my effort to translate complex industrial data into a clean, visual narrative. My creative idea was to use infographics to represent the SAP modules and Global Infrastructure so that even a non-technical person could understand the flow. My key reflection is that 'ICT is a strategic business driver, not just technical support.' This assignment has motivated me to bridge the gap between academic coding and real-world industrial mastery, pushing me to think more about user-centric data visualization."</p>
+							</div>
+						</div>
+
+						<hr />
+
+						<div class="assignment-block">
+							<h4 style="color: #212931;">1.3 Reflection for Industrial Talk 2: Academic Writing</h4>
+							
+							<p><a href="industrial talk 2 Academic Writing(assignment 3).pdf" class="button icon solid fa-file-pdf">View Academic Writing PDF</a></p>
+
+							<div class="reflection-box">
+								<p><strong>1. What I have gained:</strong><br>
+								"From this industrial talk, I learned that success in computer science requires far more than just strong programming skills. I gained a clear understanding of the Software Development Life Cycle (SDLC) and the importance of planning, system design, and teamwork in creating scalable solutions. The speaker emphasized that modern development is a collaborative ecosystem where understanding user requirements and project goals is just as critical as writing code. I also learned about the core differences between Waterfall and Agile strategies and how AI-assisted tools can improve productivity when used responsibly."</p>
+								<p><strong>2. Suggested Improvements:</strong><br>
+								"While the talk provided a great theoretical and practical overview of project management, I suggest that future sessions could include a collaborative mini-sprint workshop. Allowing students to apply Agile methodologies to a small, real-time problem during the session would help us better understand the 'sprint' cycle and team dynamics in a hands-on way."</p>
+								<p><strong>3. Reflection on Opinion, Idea, and Creativity:</strong><br>
+								"The session encouraged me to develop a balanced skill set that combines technical knowledge with system-level thinking and adaptability. My creative takeaway is to focus on System Architecture rather than just individual features. I believe that by mastering the 'why' behind system design and using AI tools as human-centric accelerators, I can become a more competent and industry-ready professional. This talk inspired me to look at software development as a disciplined craft of solving human problems through technology."</p>
+							</div>
+						</div>
+
+						<hr />
+
+						<div class="assignment-block">
+							<h4 style="color: #212931;">2. Reflection for PC Assemble Report</h4>
+							
+							<p><a href="PC Assemble Report.pdf" class="button icon solid fa-file-pdf">View PC Assemble Report PDF</a></p>
+
+							<div class="reflection-box">
+								<p><strong>1. What I have gained:</strong><br>
+								"The PC assembly project was a hands-on journey into the heart of computer hardware. I gained practical experience in identifying and installing various components such as the motherboard, CPU, RAM, and storage drives. I learned the importance of delicate handling, especially when seated the processor and managing power cables. This process helped me understand how hardware components communicate with each other to form a functional system, which is a fundamental skill for any computer science student."</p>
+								<p><strong>2. Suggested Improvements:</strong><br>
+								"While the assembly was successful, I suggest that future sessions could include more in-depth training on Cable Management and airflow optimization within the case to prevent overheating. Additionally, a brief overview of BIOS/UEFI configuration right after the first boot would be very helpful to understand how hardware and software initially interact."</p>
+								<p><strong>3. Reflection on Opinion, Idea, and Creativity:</strong><br>
+								"Assembling a PC from scratch felt like solving a complex puzzle where every piece must fit perfectly. My reflection is that this experience removed the 'black box' mystery of how computers work. It sparked my creativity to think about custom-built solutions for specific tasks, like high-performance workstations for AI or rendering. I believe that knowing your hardware inside out makes you a better software developer, as you become more aware of the physical resources your code will utilize."</p>
+							</div>
+						</div>
+
+						<hr />
+
+						<div class="assignment-block">
+							<h4 style="color: #212931;">3. Reflection for Design Thinking (BuddyUp App Prototype)</h4>
+							
+							<p><a href="Design thinking (low fidelity prototype).pdf" class="button icon solid fa-file-pdf">View Prototype PDF</a></p>
+
+							<div class="reflection-box">
+								<p><strong>1. What I have gained:</strong><br>
+								"In this project, I worked with my team to design BuddyUp, a student-to-student support platform. I gained a deep understanding of the 'Design Thinking' process by identifying the gap in academic support for first-year students. I learned how to structure an app with Key Features like a Mentorship System, Resource Hub (for past year papers), and Discussion Forums. It was fascinating to see how a digital solution can reduce academic stress and help juniors adapt to university life more smoothly."</p>
+								<p><strong>2. Suggested Improvements:</strong><br>
+								"The current prototype focuses heavily on academic support. I suggest adding a 'Peer Counseling' feature where students can discuss mental health anonymously. Additionally, incorporating a Gamification element (like badges or points for answering questions) would make the app more engaging for senior mentors to stay active."</p>
+								<p><strong>3. Reflection on Opinion, Idea, and Creativity:</strong><br>
+								"This project allowed me to be creative in problem-solving. My main reflection is that a simple app can solve a major problem—the 'Academic Gap'. I contributed to the idea of the Safety & Verification system to ensure trust between users. This experience taught me that empathy is the heart of design; by understanding a junior’s struggle, we created a tool that truly supports the student community."</p>
+							</div>
+						</div>
+					</div>
+
+				</article>
 			</div>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/main.js"></script>
+			<footer id="footer">
+				<section class="split contact">
+					<section>
+						<h3>Email</h3>
+						<p><a href="mailto:nilimarahmanlabonno@gmail.com">nilimarahmanlabonno@gmail.com</a></p>
+					</section>
+				</section>
+			</footer>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
-			
-							
+
