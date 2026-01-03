@@ -7,9 +7,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* ইন্ট্রো রিমুভ এবং হেডার স্পেসিং ঠিক করা */
 			#intro { display: none !important; } 
 			#header { padding: 2em 0 !important; margin: 0 !important; }
-			
+			#navPanel, #nav { margin-top: 0 !important; }
+
+			/* প্রোফাইল টপ সেকশন ডিজাইন */
 			.profile-top-section {
 				display: flex;
 				align-items: flex-start;
@@ -33,6 +36,7 @@
 				color: #212931;
 			}
 
+			/* ইনফো কার্ড এবং রিফ্লেকশন বক্স */
 			.info-card {
 				text-align: left;
 				background: #ffffff;
@@ -53,6 +57,7 @@
 				padding: 15px;
 				background: #f9f9f9;
 				border-left: 5px solid #212931;
+				margin-bottom: 15px;
 			}
 
 			.assignment-img {
@@ -98,11 +103,30 @@
 
 					<div class="info-card">
 						<h3>About Me</h3>
-						<p>I am a creative student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software.</p>
+						<p>I am a creative student at Universiti Teknologi Malaysia (UTM) specializing in Graphics and Multimedia Software. I am passionate about digital storytelling and creating impactful visual experiences.</p>
 					</div>
 
 					<div class="info-card">
-						<h3>Academic Assignments & Reflections</h3>
+						<h3>Core: Education & Skills</h3>
+						<p><strong>Education:</strong> Bachelor of Computer Science (Graphics and Multimedia Software), UTM.<br />
+						<strong>Skills:</strong> Multimedia Design, UI/UX, Graphics Software Development.</p>
+					</div>
+
+					<div class="info-card">
+						<h3>Recommended: Courses</h3>
+						<p>• Graphic Design Masterclass - Online Certification.<br />
+						• Adobe Certified Professional - Digital Illustration.</p>
+					</div>
+
+					<div class="info-card">
+						<h3>Additional: Honors, Awards & Projects</h3>
+						<p>• <strong>Award:</strong> Academic Honor Award from <strong>BMAPC</strong>.<br />
+						• <strong>Project:</strong> Branding and Visual Identity Design.<br />
+						• <strong>Project:</strong> 2D Animation Assignment.</p>
+					</div>
+
+					<div class="info-card">
+						<h3 style="display: block;">Academic Assignments & Reflections</h3>
 
 						<div class="assignment-block">
 							<h4 style="color: #212931; margin-bottom: 10px;">1.1 Reflection on Industrial Visit 1 (UTM Open Day at UTM Digital)</h4>
@@ -152,9 +176,7 @@
 
 						<div class="assignment-block">
 							<h4 style="color: #212931;">1.3 Reflection for Industrial Talk 2: Academic Writing</h4>
-							
-							<p><a href="industrial talk 2 Academic Writing(assignment 3).pdf" class="button icon solid fa-file-pdf">View Academic Writing PDF</a></p>
-
+							<p><a href="industrial talk 2 Academic Writing(assignment 3).pdf" target="_blank" class="button icon solid fa-file-pdf">View Academic Writing PDF</a></p>
 							<div class="reflection-box">
 								<p><strong>1. What I have gained:</strong><br>
 								"From this industrial talk, I learned that success in computer science requires far more than just strong programming skills. I gained a clear understanding of the Software Development Life Cycle (SDLC) and the importance of planning, system design, and teamwork in creating scalable solutions. The speaker emphasized that modern development is a collaborative ecosystem where understanding user requirements and project goals is just as critical as writing code. I also learned about the core differences between Waterfall and Agile strategies and how AI-assisted tools can improve productivity when used responsibly."</p>
@@ -169,9 +191,7 @@
 
 						<div class="assignment-block">
 							<h4 style="color: #212931;">2. Reflection for PC Assemble Report</h4>
-							
-							<p><a href="PC Assemble Report.pdf" class="button icon solid fa-file-pdf">View PC Assemble Report PDF</a></p>
-
+							<p><a href="PC Assemble Report.pdf" target="_blank" class="button icon solid fa-file-pdf">View PC Assemble Report PDF</a></p>
 							<div class="reflection-box">
 								<p><strong>1. What I have gained:</strong><br>
 								"The PC assembly project was a hands-on journey into the heart of computer hardware. I gained practical experience in identifying and installing various components such as the motherboard, CPU, RAM, and storage drives. I learned the importance of delicate handling, especially when seated the processor and managing power cables. This process helped me understand how hardware components communicate with each other to form a functional system, which is a fundamental skill for any computer science student."</p>
@@ -186,9 +206,7 @@
 
 						<div class="assignment-block">
 							<h4 style="color: #212931;">3. Reflection for Design Thinking (BuddyUp App Prototype)</h4>
-							
-							<p><a href="Design thinking (low fidelity prototype).pdf" class="button icon solid fa-file-pdf">View Prototype PDF</a></p>
-
+							<p><a href="Design thinking (low fidelity prototype).pdf" target="_blank" class="button icon solid fa-file-pdf">View Prototype PDF</a></p>
 							<div class="reflection-box">
 								<p><strong>1. What I have gained:</strong><br>
 								"In this project, I worked with my team to design BuddyUp, a student-to-student support platform. I gained a deep understanding of the 'Design Thinking' process by identifying the gap in academic support for first-year students. I learned how to structure an app with Key Features like a Mentorship System, Resource Hub (for past year papers), and Discussion Forums. It was fascinating to see how a digital solution can reduce academic stress and help juniors adapt to university life more smoothly."</p>
@@ -218,4 +236,5 @@
 		<script src="assets/js/main.js"></script>
 	</body>
 </html>
-
+			
+					
